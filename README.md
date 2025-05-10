@@ -26,7 +26,7 @@ This project compares vehicle characteristics and their relationship to CO2 emis
 | Multiple Regression | 0.84 | 0.95 | +0.11 |
 
 <p align="center">
-  <img src="https://i.postimg.cc/y8Vsv4yD/model-comparison.png" alt="Model Comparison" width="600"/>
+  <img src="https://i.postimg.cc/NMDsZS30/model-comparison.png" alt="Model Comparison" width="600"/>
 </p>
 
 ## 🔍 The Discovery
