@@ -105,5 +105,5 @@ ax4.legend()
 fig.suptitle("Comparison of Regression Models", fontsize=16)
 
 plt.tight_layout()
-plt.savefig('regression_models_2025.png')  # Save the figure for use in README
+# plt.savefig('regression_models_2025.png')  # Save the figure for use in README
 plt.show()
