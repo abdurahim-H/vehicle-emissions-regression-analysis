@@ -139,10 +139,9 @@ Key learning points:
 
 ## 📚 References
 
-1. IBM Developer Skills Network. (2014). *Fuel Consumption and CO2 Emissions Dataset*.
-2. Scikit-learn documentation: [Linear Regression](https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LinearRegression.html)
-3. U.S. Environmental Protection Agency. (2023). *Automotive Trends Report*.
-4. International Council on Clean Transportation. (2024). *Global Fuel Economy Initiative Status Report*.
+1. Natural Resources Canada (NRCan) . (2025). *Fuel consumption ratings*.
+2. IBM Developer Skills Network. (2014). *Fuel Consumption and CO2 Emissions Dataset*.
+3. Scikit-learn documentation: [Linear Regression](https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LinearRegression.html)
 
 ## 📄 License
 
