@@ -129,7 +129,7 @@ python src/vehicle_emissions_2025.py
 
 ## 📝 My Learning Journey
 
-This project represents a significant milestone in my data science learning journey. What began as a practice exercise in linear regression became an exciting discovery about the evolution of automotive technology.
+This project marks an early milestone in my journey to master AI. What began as a practice exercise in linear regression became an exciting discovery about the evolution of automotive technology.
 
 Key learning points:
 - Practical application of linear regression models
