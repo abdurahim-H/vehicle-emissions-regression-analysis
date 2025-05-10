@@ -116,8 +116,8 @@ The dramatic shift in predictive relationships between 2014 and 2025 reveals the
 
 ```bash
 # Clone the repository
-git clone https://github.com/your-username/vehicle-emissions-analysis.git
-cd vehicle-emissions-analysis
+git clone https://github.com/abdurahim-H/vehicle-emissions-regression-analysis.git
+cd vehicle-emissions-regression-analysis
 
 # Install dependencies
 pip install -r requirements.txt
