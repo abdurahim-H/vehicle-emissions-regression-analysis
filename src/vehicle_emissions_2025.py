@@ -8,6 +8,7 @@ from sklearn import linear_model
 from sklearn.metrics import mean_absolute_error, mean_squared_error, r2_score
 import requests
 from io import StringIO
+import joblib
 
 file_id = "1hkSHZBQ_C6NaWuLcH0VbwDt_jCdK4wzu"
 url = f"https://drive.google.com/uc?export=download&id={file_id}"
@@ -58,6 +59,10 @@ regressor03.fit(X3_train, y3_train)
 y3_test_ = regressor03.predict(X3_test)
 print("Multiple Regression Model - R2-score: %.2f" % r2_score(y3_test_, y3_test))
 
+# Save the trained model
+joblib.dump(regressor03, 'co2_model_2025.joblib')
+print("Trained model saved as 'co2_model_2025.joblib'")
+
 fig, ((ax1, ax2), (ax3, ax4)) = plt.subplots(2, 2, figsize=(15, 12))
 
 # First subplot for Engine Size
@@ -105,5 +110,17 @@ ax4.legend()
 fig.suptitle("Comparison of Regression Models", fontsize=16)
 
 plt.tight_layout()
-# plt.savefig('regression_models_2025.png')  # Save the figure for use in README
 plt.show()
+
+if __name__ == "__main__":
+    answer = input("Do you want to estimate CO2 emission for a new car? (y/n): ").strip().lower()
+    if answer == 'y':
+        try:
+            engine_size = float(input("Enter engine size: "))
+            fuel_consumption = float(input("Enter fuel consumption (combined): "))
+            X_new = [[engine_size, fuel_consumption]]
+            model = joblib.load('co2_model_2025.joblib')
+            predicted_co2 = model.predict(X_new)
+            print(f"Estimated CO2 emission: {predicted_co2[0]:.2f} g/km")
+        except Exception as e:
+            print(f"Error: {e}")
