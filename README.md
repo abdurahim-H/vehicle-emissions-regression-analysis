@@ -94,6 +94,27 @@ The dramatic shift in predictive relationships between 2014 and 2025 reveals the
   <img src="https://i.postimg.cc/3RBqBB2m/Figure-2025.png" alt="2025 Regression Models" width="700"/>
 </p>
 
+## 🖥️ Interactive CO₂ Emission Prediction
+
+You can now use the trained 2025 model to estimate CO₂ emissions for a new car directly from the terminal!
+
+### How to Use
+
+1. **Run the script:**
+   ```bash
+   python src/vehicle_emissions_2025.py
+   ```
+2. **When prompted:**
+   - Type `y` to enter new car details.
+   - Enter the engine size (e.g., `2.0`).
+   - Enter the fuel consumption (combined, e.g., `7.5`).
+3. **Get your result:**
+   - The script will output the estimated CO₂ emission for your input.
+
+> **Note:**
+> - The model is trained and saved automatically as `src/co2_model_2025.joblib`.
+> - You can re-run the script any time to make new predictions.
+
 ## 💡 Implications
 
 1. **For Consumers**: Engine size has become a less reliable indicator of a vehicle's environmental impact. Fuel consumption ratings should be the primary consideration.
